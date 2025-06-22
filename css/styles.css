@@ -44,17 +44,27 @@ nav a {
   background-color: #fff;
   text-align: center;
 }
+
 .art-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5em;
   margin-top: 1em;
 }
+
 .art-grid img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
 }
+
+.art-grid img:hover {
+  transform: scale(1.03);
+}
+
 .about {
   padding: 3em 2em;
   display: flex;
