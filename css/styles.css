@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f6ef;
+  color: #4b2e1f;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b4bba3;
+  padding: 1em 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #4b2e1f;
+  font-weight: bold;
+}
+.hero {
+  background: url('../images/landscape.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5em 2em;
+  text-shadow: 1px 1px 6px #000;
+}
+.hero .cta {
+  background-color: #ce6933;
+  color: white;
+  padding: 0.75em 1.5em;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+}
+.featured-art {
+  padding: 3em 2em;
+  background-color: #fff;
+  text-align: center;
+}
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+.art-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.about {
+  padding: 3em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  background-color: #ece8de;
+}
+.about img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+footer {
+  background-color: #4b2e1f;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
